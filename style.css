@@ -1,0 +1,73 @@
+* {
+/*   border: solid 1px red; */
+  font-family: "cwTeXHei", sans-serif;
+}
+body{
+  background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
+}
+
+h2{
+  text-align:center;
+}
+section{
+  margin-top:80px;
+}
+.leftcard{
+  margin-top:5px;
+}
+
+
+.b{
+  font-size:20px;
+}
+
+/*返回最頂圖示*/
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+/*返回最頂圖示*/
+
+/* 字體區 */
+@font-face {
+  font-family: "cwTeXHei";
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix)
+      format("embedded-opentype"),
+    url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format("woff"),
+    url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf)
+      format("truetype");
+}
+/*字體區*/
